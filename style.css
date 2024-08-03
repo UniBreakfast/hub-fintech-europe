@@ -1,0 +1,105 @@
+:root {
+  --color: #F8C749;
+}
+
+body, button {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  height: 144px;
+  display: flex;
+  align-items: center;
+  padding: 80px 60px 0;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.logo {
+  width: 35px;
+  height: 47px;
+  margin-right: 35px;
+}
+
+header>.link {
+  margin-left: auto;
+  text-align: right;
+  color: #000;
+}
+
+header>.link:not(:hover) {
+  text-decoration: none;
+}
+
+header>button {
+  margin-left: 30px;
+  width: 58px;
+  height: 56px;
+  border: 1px solid #000;
+  background: none;
+  box-sizing: border-box;
+  font-size: 16px;
+  padding: 16px 21px;
+}
+
+h1 {
+  height: 26vw;
+  font-size: 8vw;
+  margin: 0;
+  padding-left: 5.83vw;
+}
+
+.hero>.container {
+  background-image: url(images/hero.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 56.25vw;
+  position: relative;
+  padding-top: 42px;
+  padding-left: 5.83vw;
+  box-sizing: border-box;
+}
+
+.hero button {
+  background-color: var(--color);
+  border: none;
+  padding: 8px 27px;
+  border-radius: 92px;
+  text-align: left;
+}
+
+.hashtags {
+  position: absolute;
+  top: -81px;
+  right: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-image: url(images/blob.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 388px;
+  height: 713px;
+  padding: 92px 0 0 124px;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+@media (width < 680px) {
+  .hero>.container {
+    height: 606px;
+    background-size: cover;
+  }
+  
+  .hashtags {
+    top: 166px;
+    height: 440px;
+    padding-top: 42px;
+  }
+}
