@@ -47,6 +47,10 @@ header>button {
   padding: 16px 21px;
 }
 
+.hero {
+  min-height: 740px;
+}
+
 h1 {
   height: 26vw;
   font-size: 8vw;
@@ -91,15 +95,56 @@ h1 {
   margin: 0;
 }
 
+.about>h2 {
+  font-size: 79px;
+  max-width: 716px;
+  margin-left: auto;
+  padding: 20px;
+  box-sizing: border-box;
+  font-weight: normal;
+}
+
+.about .box {
+  position: relative;
+}
+
+.about .box::before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 1px;
+  left: -19px;
+  width: 322px;
+  height: 104px;
+  border: 2px solid #000;
+  border-radius: 67px;
+}
+
 @media (width < 680px) {
+  .hero {
+    min-height: unset;
+  }
+
   .hero>.container {
     height: 606px;
     background-size: cover;
   }
-  
+
   .hashtags {
     top: 166px;
     height: 440px;
     padding-top: 42px;
+  }
+
+  .about>h2 {
+    font-size: 48px;
+    max-width: 460px;
+  }
+
+  .about .box::before {
+    left: -14px;
+    width: 195px;
+    height: 64px;
+    border-radius: 60px;
   }
 }
